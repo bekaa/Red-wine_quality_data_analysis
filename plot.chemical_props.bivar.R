@@ -14,9 +14,9 @@ plot.chemical_props.bivar <- function(X,Y)
 	Xcolumn <- remove_outliers(wine[, c(X)])
 	Ycolumn <- remove_outliers(x=wine[, c(Y)])
 	Xlimits <- range(Xcolumn,na.rm = TRUE)
-	Xbreaks <- c( seq(Xlimits[1],Xlimits[2], ((Xlimits[2]-Xlimits[1])/10.0)))
+	Xbreaks <- c( seq(Xlimits[1],Xlimits[2], ((Xlimits[2]-Xlimits[1])/5.0)))
 	Ylimits <- range(Ycolumn,na.rm = TRUE)
-	Ybreaks <- c( seq(Ylimits[1],Ylimits[2], ((Ylimits[2]-Ylimits[1])/10.0)))
+	Ybreaks <- c( seq(Ylimits[1],Ylimits[2], ((Ylimits[2]-Ylimits[1])/5.0)))
 	
 	m = lm( formula = Ycolumn ~ Xcolumn )
 	
