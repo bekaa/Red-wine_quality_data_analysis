@@ -1,8 +1,12 @@
 ---
 title: "Red wine data analysis"
-output: html_document
 author: 'khaled salah'	
 date: Dec 15, 2016
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
 ---
 ---  
   
@@ -134,71 +138,70 @@ The following graphs represents boxplots between each quality level [3-8], versu
 * the black points inside the boxplots and the line attaching them to each other represent the mean for each quality level.
 ```{r echo=FALSE,warning=FALSE,message=FALSE}
 source('./plot.quality.boxplot.R') #import the function 
-cols <- names(wine)[-c(1,13)]
 ```   
 
 ```{r echo=FALSE,warning=FALSE,message=FALSE}
-plot.quality.boxplot(cols[1])
+plot.quality.boxplot('fixed.acidity','g / dm^3')
 ```   
     
 The mean increases from level 4 to 7 .
   
 ```{r echo=FALSE,warning=FALSE,message=FALSE}
-plot.quality.boxplot(cols[2])
+plot.quality.boxplot('volatile.acidity','g / dm^3')
 ```   
   
 The mean decreases from level 3 to 7, and increases a little to 8.
   
 ```{r echo=FALSE,warning=FALSE,message=FALSE}
-plot.quality.boxplot(cols[3])
+plot.quality.boxplot('citric.acid','g / dm^3')
 ```   
   
 The mean remains the same from 3 to 4 then increases to 7 then remains to 8 .
   
 ```{r echo=FALSE,warning=FALSE,message=FALSE}
-plot.quality.boxplot(cols[4])
+plot.quality.boxplot('residual.sugar','g / dm^3')
 ```   
   
 The mean slightly decreases from 3 to 8.
   
 ```{r echo=FALSE,warning=FALSE,message=FALSE}
-plot.quality.boxplot(cols[5])
+plot.quality.boxplot('chlorides','g / dm^3')
 ```   
   
 The mean significantly decreases from 3 to 4, then slowly decreases all over the way to 8.
   
 ```{r echo=FALSE,warning=FALSE,message=FALSE}
-plot.quality.boxplot(cols[6])
+plot.quality.boxplot('free.sulfur.dioxide','mg / dm^3')
 ```   
   
 The mean increases from 3 to 5, then decreases from 5 to 8.
   
 ```{r echo=FALSE,warning=FALSE,message=FALSE}
-plot.quality.boxplot(cols[7])
+plot.quality.boxplot('total.sulfur.dioxide','mg / dm^3')
 ```   
   
 The same as free sulfur dioxide, the  mean increase from 3 to 5, then decreases from 5 to 8.
    
 ```{r echo=FALSE,warning=FALSE,message=FALSE}
-plot.quality.boxplot(cols[8])
+plot.quality.boxplot('density','g / cm^3')
 ```   
   
 The mean decreases from 3 to 4 , and from 5 to 8, but increases from 4 to 5.
   
 ```{r echo=FALSE,warning=FALSE,message=FALSE}
-plot.quality.boxplot(cols[9])
+plot.quality.boxplot('pH','0-14')
 ```   
    
 The mean remains the same between 3 to 4 , and 5 to 6, and decreases otherwise.
    
 ```{r echo=FALSE,warning=FALSE,message=FALSE}
-plot.quality.boxplot(cols[10])
+plot.quality.boxplot('sulphates','g / dm^3')
 ```   
   
 The mean slowly increases all over the way.
   
 ```{r echo=FALSE,warning=FALSE,message=FALSE}
-plot.quality.boxplot(cols[11])
+plot.quality.boxplot('alcohol','% by volume')
 ```   
    
 The mean significantly increases from 5 to 8, and from 3 to 4 , but decreases from 4 to 5.
@@ -327,13 +330,13 @@ grid.arrange(d1,d2,d3,ncol = 1, nrow = 3) 	#density
 
 Density depends on three variables (fixed acidity, chlorides, and residual sugar), and it's the line of mean matches the line of best fit.
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE,fig.width=12}
 grid.arrange(f1,f2,ncol = 2) 			          #fixed.acidity
 ```
 
 As shown  fixed acidity has positive relation with citric acid and negative one with pH.
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE,fig.width=12}
 grid.arrange(c1,c2,c3,ncol = 3,nrow = 1)    #citric.acid
 ```
 
@@ -512,7 +515,7 @@ the highest quality level has mean near to 12% alcohol, and the lowest quality l
 And if we considered the 2% difference to not be big, the graph show the opposite, as the alcohol level goes higher from 10 to 12 the quality level goes higher.
   
 ```{r message=FALSE,warning=FALSE,echo=FALSE}  
-plot.quality.boxplot('alcohol')
+plot.quality.boxplot('alcohol','% by volume')
 ```
   
 ---- 
