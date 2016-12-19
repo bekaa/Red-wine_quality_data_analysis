@@ -1,4 +1,4 @@
-plot.quality.boxplot <- function(X)
+plot.quality.boxplot <- function(X, unit = '')
 {
 	Xcolumn <- wine[, c(X)] 
 	limits <- range(Xcolumn)
@@ -9,7 +9,7 @@ plot.quality.boxplot <- function(X)
 	print(
 		ggplot(aes(  y = Xcolumn, x = factor(quality) ) 
 					 ,data = wine)+
-			ylab( X )+
+			ylab( paste0(X, " (" ,unit," )") )+
 			xlab('quality')+
 			ggtitle(X)+
 			scale_y_continuous(limits = limits,
