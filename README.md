@@ -1,8 +1,10 @@
-# Red-wine_quality_data_analysis
+# predicting red wine quality
 
 Red wine is one of the most beautiful drinks, so it’s going to be interesting to find out what makes a good wine ! :)
-
-This is a Data analysis for the red-wine data-set.  
+using the published dataset for red-wine quality, I'm Investigating the dataset using R and exploratory data analysis techniques, exploring both single variables and relationships between variables.  
+The data-set contains 11 chemical characteristics beside a quality graded from at least 3 wine experts for 1599 different wines.  
+Predicting the quality using R.  
+This project is a part of the data-analysis Nanodegree provided by udacity.  
 
 The project is published on RPubs from this link : http://rpubs.com/beka/red-wine_data-analysis .  
 And you can find the source R code under the name : project.Rmd .  
