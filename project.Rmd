@@ -37,7 +37,7 @@ Red wine is one of the most beautiful drinks, so it's going to be interesting to
 
 ### <a name="data-set">Date set</a>
 
-The data can be downloaded from this [link](https://www.google.com/url?q=https://s3.amazonaws.com/udacity-hosted-downloads/ud651/wineQualityReds.csv&sa=D&ust=1480517492986000&usg=AFQjCNH997PTSMOwZJcIcbrirMkj_G0A4w), also you can find it on my github along with other report resources :  [link](https://github.com/bekaa/Red-wine_quality_data_analysis) .
+The data can be downloaded from this [link](https://www.google.com/url?q=https://s3.amazonaws.com/udacity-hosted-downloads/ud651/wineQualityReds.csv&sa=D&ust=1480517492986000&usg=AFQjCNH997PTSMOwZJcIcbrirMkj_G0A4w), also you can find it on my github along with other report resources :  [link](https://github.com/bekaaa/predicting-red-wine-quality) .
 
 Also read this [text file](https://www.google.com/url?q=https://s3.amazonaws.com/udacity-hosted-downloads/ud651/wineQualityInfo.txt&sa=D&ust=1480517492987000&usg=AFQjCNGpnSwGV7Q2fH09opHGhc-P3Rr_mw) which describes the variables and how the data was collected.
 
@@ -606,8 +606,8 @@ Available at:
     
 This analysis is done by a udacity's Data-analysis Nano-degree program Student as a course project.     
     
-__Github:__ https://github.com/bekaa   
-__LinkedIn:__ https://eg.linkedin.com/in/khaled-salah-48360590   
+__Github:__ https://github.com/bekaaa   
+__LinkedIn:__ https://eg.linkedin.com/in/bekaaa  
 __WordPress:__: https://khaledsalahblog.wordpress.com   
 __Email:__ sci.kd.eg@gmail.com   
  
